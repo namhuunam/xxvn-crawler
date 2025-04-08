@@ -33,6 +33,10 @@ Chạy migration để đảm bảo cột update_identity đã tồn tại:
 ```bash
 php artisan migrate
 ```
+# Chạy lại lệnh crawl với các log chi tiết
+```bash
+php artisan xxvn:crawl --fromPage=1 --toPage=1 -v
+```
 Bạn cũng có thể giới hạn số lượng phim để thử nghiệm:
 ```bash
 php artisan xxvn:crawl --fromPage=2 --toPage=1 --limit=5
