@@ -1,0 +1,41 @@
+{
+    "name": "namhuunam/xxvn-crawler",
+    "description": "A Laravel 8 package to crawl movie data from xxvnapi.com",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "namhuunam",
+            "email": "your.email@example.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.7",
+        "spatie/image-optimizer": "^1.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "namhuunam\\XxvnCrawler\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "namhuunam\\XxvnCrawler\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "namhuunam\\XxvnCrawler\\XxvnCrawlerServiceProvider"
+            ]
+        }
+    }
+}
