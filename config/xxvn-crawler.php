@@ -10,11 +10,11 @@ return [
     |
     */
     'api' => [
-        'base_url' => 'https://xxvnapi.com',
-        'page_from' => 300,
+        'base_url' => 'https://xxvnapi.com/api',
+        'page_from' => 3,
         'page_to' => 1,
         'delay' => 1, // Delay in seconds between API requests
-        'timeout' => 30, // Timeout for API requests in seconds
+        'timeout' => 60, // Timeout for API requests in seconds
         'retries' => 3, // Number of retries on failure
     ],
 
@@ -41,7 +41,5 @@ return [
     'logging' => [
         'enabled' => true,
         'channel' => 'stack',
-        'file' => storage_path('logs/xxvn-crawler.log'), // Đường dẫn file log riêng
-        'error_log' => storage_path('logs/xxvn-crawler-errors.log'), // File log lỗi riêng
     ],
 ];
