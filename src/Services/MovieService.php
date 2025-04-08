@@ -150,7 +150,7 @@ class MovieService
             'episode_current' => 'Full',
             'episode_total' => '1',
             'quality' => $movieData['quality'] ?? 'HD',
-            'language' => $movieData['lang'] ?? 'Vietsub',
+            'language' => array_key_exists('lang', $movieData) ? $movieData['lang'] : 'Vietsub',
             'publish_year' => date('Y'),
             'update_identity' => $movieData['id'] ?? null,
             'user_id' => 1,
